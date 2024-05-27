@@ -48,11 +48,17 @@
                 <p>
                   I'm interested in photonics, computing hardware, physics, deep learning, generative AI, and image processing. My PhD was, in short, "photonics for AI and AI for photonics." I built a novel analog optical matrix multiplication chip and integrated it with an optical probing station with a movable stage to enable the first ever neural net backpropaagation and cryptocurrency demonstrations on photonic circuits. These are included in the <span class="highlight">highlighted</span> papers below.
                 </p>
+                <p></p>
+            <h3>Defense Slides</h3>
+            <iframe src="https://sunilkpai.github.io/defense/" frameborder="0">
+            </iframe>
+            <p></p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
 
     <tr onmouseout="bp_stop()" onmouseover="bp_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -122,11 +128,25 @@
     </tr>
 
 
-    <tr bgcolor="#ffffd0">
+    <tr bgcolor="#ffffd0" onmouseout="crypto_stop()" onmouseover="crypto_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <img src='images/crypto.png' width=100%>
+          <div class="two" id='crypto_image'>
+          <img src="images/crypto.gif" width="160" height="100">
+          </div>
+          <img src='images/crypto.png' width="160">
         </div>
+        <script type="text/javascript">
+          function crypto_start() {
+            document.getElementById('crypto_image').style.opacity = "1";
+          }
+
+          function crypto_stop() {
+            document.getElementById('crypto_image').style.opacity = "0";
+          }
+          crypto_stop()
+        </script>
+      </td>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-10-5-552&id=530125">
@@ -195,6 +215,41 @@
         <p></p>
         <p>
         Exploring the matrix optimization of unitary networks for different sizes and architectures, relevant to both photonic circuits and machine learning applications.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/parallelnull.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://www-ee.stanford.edu/~dabm/465.pdf">
+          <span class="papertitle">Parallel Programming of an Arbitrary Feedforward Photonic Network
+      </span>
+        </a>
+        <br>
+				<strong><a href="https://sunilkpai.github.io/">Sunil Pai</a></strong>,
+        <a href="https://www.linkedin.com/in/ianadwilliamson/">Ian A. D. Williamson</a>,
+        <a href="https://twhughes.github.io/">Tyler W. Hughes</a>,
+        <a href="https://momchilmm.github.io/">Momchil Minkov</a>,
+        <a href="https://shanhui.people.stanford.edu/">Shanhui Fan</a>,
+        <a href="https://web.stanford.edu/~solgaard/index.html">Olav Solgaard</a>,
+        <a href="https://dabm.stanford.edu">David AB Miller</a>
+        <br>
+        <em>JSTQE</em>, 2020
+        <br>
+        <a href="https://ieeexplore.ieee.org/document/9103211">paper</a>
+        /
+        <a href="https://arxiv.org/abs/1909.06179">arXiv</a>
+        /
+        <a href="https://techfinder.stanford.edu/technology/simultaneous-measurements-gradients-optical-networks">patent</a>
+        <p></p>
+        <p>
+        A new calibration algorithm for tuning arbitrary feedforward photonic networks is based on reciprocity in physics.
         </p>
       </td>
     </tr>
